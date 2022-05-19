@@ -1,10 +1,7 @@
 FROM node:alpine
 
-WORKDIR '/app'
-ENV NODE_OPTIONS=--openssl-legacy-provider
-COPY package.json .
+WORKDIR ../usr/app
+COPY ./package.json ./
 RUN npm install
-
-COPY . .
-
-CMD ["npm", "run", "start"]
+COPY ./ ./
+CMD ["npm", "start"]
