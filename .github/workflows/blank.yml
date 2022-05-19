@@ -42,4 +42,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            zakex/lab1:multi_arch
+            zakex/lab1:multi_arch2
